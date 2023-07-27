@@ -4,10 +4,22 @@ body {
     background-color: rgb(15, 27, 56);
     color: rgb(226, 232, 240);
     font-family: Inter, 'Courier New', Courier, monospace;
-    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 /* Hero */
+
+.hero {
+    text-align: center;
+}
 
 .hero h1 {
     font-size: 4rem;
@@ -15,11 +27,27 @@ body {
     margin-bottom: .5rem;
 }
 
-.hero h2 {
-    margin-top: 0;
+.hero h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    color: rgb(172, 180, 190);
 }
 
 .hero a {
     text-decoration: none;
     color: rgb(226, 232, 240);
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About */
+
+p {
+    margin-top: 0;
+    color: rgb(172, 180, 190);
 }

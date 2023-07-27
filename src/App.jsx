@@ -1,15 +1,19 @@
 import "normalize.css";
 import "./App.css";
+import Hero from "../components/Hero.jsx";
+import About from "../components/About.jsx";
 
 function App() {
   console.log("hello");
   return (
-    <section className="hero">
-      <a href="#">
-        <h1>Jonathan Nguyen</h1>
-      </a>
-      <h2>Software Engineer</h2>
-    </section>
+    <>
+      <Hero />
+      <About />
+
+      <section className="projects container">
+        <h2>Projects</h2>
+      </section>
+    </>
   );
 }
 
