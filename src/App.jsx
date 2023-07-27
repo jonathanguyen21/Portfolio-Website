@@ -1,18 +1,17 @@
 import "normalize.css";
 import "./App.css";
-import Hero from "../components/Hero.jsx";
-import About from "../components/About.jsx";
+import NavBar from "../components/NavBar";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Projects from "../components/Projects";
 
 function App() {
-  console.log("hello");
   return (
     <>
+      <NavBar />
       <Hero />
       <About />
-
-      <section className="projects container">
-        <h2>Projects</h2>
-      </section>
+      <Projects />
     </>
   );
 }

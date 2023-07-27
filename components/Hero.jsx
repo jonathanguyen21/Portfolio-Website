@@ -4,7 +4,7 @@ function Hero() {
       <a href="#">
         <h1>Jonathan Nguyen</h1>
       </a>
-      <h2>Software Engineer</h2>
+      <h3>Software Engineer</h3>
     </section>
   );
 }

@@ -3,9 +3,11 @@
 body {
     background-color: rgb(15, 27, 56);
     color: rgb(226, 232, 240);
-    font-family: Inter, 'Courier New', Courier, monospace;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    height: 200vh;
 }
 
 h2 {
@@ -13,6 +15,35 @@ h2 {
     font-size: 1rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+}
+
+/* NavBar */
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar__list__item {
+    margin: 0 1rem;
+    border-bottom: 1px solid #222;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(226, 232, 240);
+}
+
+.navbar a:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar__list {
+        justify-content: end;
+    }
 }
 
 /* Hero */
