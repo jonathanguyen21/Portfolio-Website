@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+
+body {
+    background-color: rgb(15, 27, 56);
+    color: rgb(226, 232, 240);
+    font-family: Inter, 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* Hero */
+
+.hero h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+.hero a {
+    text-decoration: none;
+    color: rgb(226, 232, 240);
+}
