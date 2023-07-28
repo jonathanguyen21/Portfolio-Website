@@ -11,10 +11,20 @@ body {
 }
 
 h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+}
+
+h4 {
+    margin-bottom: 0.5rem;
 }
 
 /* NavBar */
@@ -36,8 +46,9 @@ h2 {
     color: rgb(226, 232, 240);
 }
 
-.navbar a:hover {
+a:hover {
     cursor: pointer;
+    color: #4ea5f7;
 }
 
 @media screen and (min-width: 1000px) {
@@ -58,14 +69,14 @@ h2 {
     margin-bottom: .5rem;
 }
 
-.hero h3 {
+.hero h2 {
     font-size: 1.5rem;
     margin: 0;
     margin-bottom: 3rem;
     color: rgb(172, 180, 190);
 }
 
-.hero a {
+a {
     text-decoration: none;
     color: rgb(226, 232, 240);
 }
@@ -85,6 +96,23 @@ p {
 
 /* Projects */
 
+.projects a {
+    display: block;
+    margin-top: 1rem;
+}
+
+.projects a:hover {
+    color: #4ea5f7;
+    .cards__link__arrow {
+        margin-left: 1rem
+    }
+}
+
+.cards__link__arrow {
+    margin-left: 0.5rem;
+    transition: margin 0.3s;
+}
+
 /* Badges */
 
 .badge {
@@ -94,5 +122,9 @@ p {
     font-size: 1rem;
     font-weight: 500;
     padding: 0.2rem 1rem;
-    margin: 5px;
+    margin-right: 10px;
+}
+
+.badge:hover {
+    background-color: rgba(0, 255, 255, 0.2);
 }
