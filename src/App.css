@@ -24,7 +24,9 @@ h3 {
 }
 
 h4 {
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 a {
@@ -94,7 +96,8 @@ p {
 
 .projects a {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
 }
 
 .projects a:hover {

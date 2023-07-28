@@ -20,10 +20,32 @@ function Projects() {
           <Badge language="JavaScript" />
           <Badge language="CSS" />
           <Badge language="HTML" />
-
           <div className="project__link__div">
             <a
               href="https://github.com/jonathanguyen21/portfolio-website"
+              target="_blank"
+            >
+              View Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="cards__link__arrow"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <h4>Calculator App</h4>
+          <p className="description">
+            Recreation of the iOS calculator app. Created each button and tested
+            edge cases to help prevent crashes. Coded in Swift using SwiftUI
+            Kit.
+          </p>
+          <Badge language="Swift" />
+          <Badge language="SwiftUI Kit" />
+          <div>
+            <a
+              href="https://github.com/jonathanguyen21/calculator-app"
               target="_blank"
             >
               View Code
