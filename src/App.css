@@ -7,7 +7,7 @@ body {
     font-size: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    height: 200vh;
+    height: 200vh
 }
 
 h2 {
@@ -126,4 +126,16 @@ p {
 
 .badge:hover {
     background-color: rgba(0, 255, 255, 0.2);
+}
+
+/* Contact Methods */
+
+.contact--methods {
+    display: flex;
+    justify-content: center;
+}
+
+.contact--methods__icon {
+    font-size: 3rem;
+    margin: 1.5rem;
 }
