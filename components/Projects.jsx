@@ -56,6 +56,52 @@ function Projects() {
             </a>
           </div>
         </div>
+
+        <div className="card">
+          <h4>Discord Entertainment Bot</h4>
+          <p className="description">
+            Users can add this bot for use in their Discord servers. This bot
+            includes a variety of entertainment functions including: a Newegg
+            web scraper, account login detail manager, etc. Coded in Python
+            using BeautifulSoup.
+          </p>
+          <Badge language="Python" />
+          <Badge language="BeautifulSoup" />
+          <div>
+            <a
+              href="https://replit.com/@jonnylee628/Discord-Bot"
+              target="_blank"
+            >
+              View Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="cards__link__arrow"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <h4>RSA Encryption and Decryption</h4>
+          <p className="description">
+            Using an interface for encryption and decryption, users are able to
+            encrypt files and decrypt them if they have access to the correct
+            keys. Coded in C.
+          </p>
+          <Badge language="C Programming Language" />
+          <div>
+            <a
+              href="https://github.com/jonathanguyen21/RSA-Encryption-and-Decryption"
+              target="_blank"
+            >
+              View Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="cards__link__arrow"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
