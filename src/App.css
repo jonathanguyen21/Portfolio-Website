@@ -135,7 +135,24 @@ p {
     justify-content: center;
 }
 
-.contact--methods__icon {
+/* Icons */
+
+.icon {
     font-size: 3rem;
     margin: 1.5rem;
+}
+
+/* Skills */
+
+.skills--section {
+    display: flex;
+}
+
+.skills__icon {
+    display: inline-block;
+    text-align: center;
+}
+
+.skills__icon .icon {
+    margin-bottom: .5rem;
 }
