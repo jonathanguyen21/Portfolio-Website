@@ -27,6 +27,17 @@ h4 {
     margin-bottom: 0.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(226, 232, 240);
+    transition: color 0.3s;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #4ea5f7;
+}
+
 /* NavBar */
 
 .navbar__list {
@@ -39,16 +50,6 @@ h4 {
 .navbar__list__item {
     margin: 0 1rem;
     border-bottom: 1px solid #222;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: rgb(226, 232, 240);
-}
-
-a:hover {
-    cursor: pointer;
-    color: #4ea5f7;
 }
 
 @media screen and (min-width: 1000px) {
@@ -76,11 +77,6 @@ a:hover {
     color: rgb(172, 180, 190);
 }
 
-a {
-    text-decoration: none;
-    color: rgb(226, 232, 240);
-}
-
 /* Container */
 .container {
     max-width: 600px;
@@ -97,12 +93,11 @@ p {
 /* Projects */
 
 .projects a {
-    display: block;
+    display: inline-block;
     margin-top: 1rem;
 }
 
 .projects a:hover {
-    color: #4ea5f7;
     .cards__link__arrow {
         margin-left: 1rem
     }
@@ -123,6 +118,7 @@ p {
     font-weight: 500;
     padding: 0.2rem 1rem;
     margin-right: 10px;
+    transition: background-color 0.3s;
 }
 
 .badge:hover {

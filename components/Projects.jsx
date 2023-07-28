@@ -21,16 +21,18 @@ function Projects() {
           <Badge language="CSS" />
           <Badge language="HTML" />
 
-          <a
-            href="https://github.com/jonathanguyen21/portfolio-website"
-            target="_blank"
-          >
-            View Code
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="cards__link__arrow"
-            />
-          </a>
+          <div className="project__link__div">
+            <a
+              href="https://github.com/jonathanguyen21/portfolio-website"
+              target="_blank"
+            >
+              View Code
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="cards__link__arrow"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
