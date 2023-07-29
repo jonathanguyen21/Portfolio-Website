@@ -100,15 +100,17 @@ p {
     margin-bottom: 1rem;
 }
 
-.projects a:hover {
-    .cards__link__arrow {
-        margin-left: 1rem
-    }
-}
-
 .cards__link__arrow {
     margin-left: 0.5rem;
     transition: margin 0.3s;
+}
+
+.card:hover {
+    background-color: rgb(226, 232, 240, 0.05);
+    border-radius: 5px;
+    .cards__link__arrow {
+        margin-left: 1rem;
+    }
 }
 
 /* Badges */
@@ -156,6 +158,11 @@ p {
 .skills__icon {
     display: inline-block;
     text-align: center;
+}
+
+.skills__icon:hover {
+    background-color: rgb(226, 232, 240, 0.2);
+    border-radius: 5px;
 }
 
 .skills__icon .icon {
