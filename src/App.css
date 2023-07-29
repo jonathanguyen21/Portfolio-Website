@@ -150,6 +150,7 @@ p {
 
 .skills--section {
     display: flex;
+    justify-content: center;
 }
 
 .skills__icon {
