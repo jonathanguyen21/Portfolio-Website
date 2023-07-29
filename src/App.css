@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
+@import "animate.css";
 
 body {
     background-color: rgb(15, 27, 56);
@@ -75,7 +76,6 @@ a:hover {
 .hero h2 {
     font-size: 1.5rem;
     margin: 0;
-    margin-bottom: 3rem;
     color: rgb(172, 180, 190);
 }
 
@@ -138,8 +138,12 @@ p {
 /* Icons */
 
 .icon {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 1.5rem;
+}
+
+.icon__name {
+    font-size: .8rem;
 }
 
 /* Skills */

@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import ContactMethods from "../components/ContactMethods";
+import SocialMedia from "../components/SocialMedia";
 import Skills from "../components/Skills";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Skills />
       <About />
       <Projects />
-      <ContactMethods />
+      <SocialMedia />
     </>
   );
 }
