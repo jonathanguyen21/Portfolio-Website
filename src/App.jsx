@@ -6,6 +6,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import SocialMedia from "../components/SocialMedia";
 import Skills from "../components/Skills";
+import AnimateLetter from "../components/AnimateLetter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Projects />
       <SocialMedia />
+      <AnimateLetter letter="s" />
     </>
   );
 }
