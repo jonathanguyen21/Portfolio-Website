@@ -2,7 +2,8 @@
 @import "animate.css";
 
 body {
-    background-color: rgb(15, 27, 56);
+    /* rgb(15, 27, 56); */
+    background-color: rgb(6, 14, 31);
     color: rgb(226, 232, 240);
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 1rem;
