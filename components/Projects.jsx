@@ -1,6 +1,13 @@
 import Badge from "./Badge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hover: {
+    scale: 1.05,
+  },
+};
 
 function Projects() {
   return (
@@ -9,7 +16,7 @@ function Projects() {
         <h2>Projects</h2>
       </header>
       <div className="cards container">
-        <div className="card">
+        <motion.div variants={cardVariants} whileHover="hover" className="card">
           <h4>Portfolio Website (This Site)</h4>
           <p className="description">
             Website that shows off my portfolio and experience I have. Topics
@@ -32,9 +39,9 @@ function Projects() {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="card">
+        <motion.div variants={cardVariants} whileHover="hover" className="card">
           <h4>Calculator App</h4>
           <p className="description">
             Recreation of the iOS calculator app. Created each button and tested
@@ -55,9 +62,9 @@ function Projects() {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="card">
+        <motion.div variants={cardVariants} whileHover="hover" className="card">
           <h4>Discord Entertainment Bot</h4>
           <p className="description">
             Users can add this bot for use in their Discord servers. This bot
@@ -79,9 +86,9 @@ function Projects() {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="card">
+        <motion.div variants={cardVariants} whileHover="hover" className="card">
           <h4>RSA Encryption and Decryption</h4>
           <p className="description">
             Using an interface for encryption and decryption, users are able to
@@ -101,7 +108,7 @@ function Projects() {
               />
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

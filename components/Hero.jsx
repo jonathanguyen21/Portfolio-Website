@@ -1,10 +1,44 @@
+import { motion } from "framer-motion";
+
+const heroVariants = {
+  hidden: { x: "-100vw" },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.25,
+      type: "spring",
+      stiffness: 60,
+    },
+  },
+};
+
+const headerVariants = {
+  hover: {
+    scale: 1.1,
+    transition: {
+      duration: 0.2,
+      repeat: Infinity,
+      repeatType: "mirror",
+    },
+  },
+};
+
 function Hero() {
   return (
-    <section className="hero">
+    <section
+      //variants={heroVariants}
+      //initial="hidden"
+      //animate="visible"
+      className="hero"
+    >
       <a href="#">
-        <h1>Jonathan Nguyen</h1>
+        <motion.h1 variants={headerVariants} whileHover="hover">
+          Jonathan Nguyen
+        </motion.h1>
       </a>
-      <h2>Software Engineer</h2>
+      <motion.h2 variants={headerVariants} whileHover="hover">
+        Software Engineer
+      </motion.h2>
     </section>
   );
 }

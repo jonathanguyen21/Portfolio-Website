@@ -9,7 +9,8 @@ body {
     font-size: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    height: 200vh
+    height: 200vh;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -102,17 +103,24 @@ p {
     margin-bottom: 1rem;
 }
 
+.projects a:hover {
+    .cards__link__arrow {
+        margin-left: 1rem;
+    }
+}
+
 .cards__link__arrow {
     margin-left: 0.5rem;
     transition: margin 0.3s;
 }
 
+.card {
+    transition: background-color .3s;
+}
+
 .card:hover {
     background-color: rgb(226, 232, 240, 0.05);
     border-radius: 5px;
-    .cards__link__arrow {
-        margin-left: 1rem;
-    }
 }
 
 /* Badges */
