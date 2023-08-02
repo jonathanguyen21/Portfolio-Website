@@ -92,6 +92,12 @@ a:hover {
     color: rgb(172, 180, 190);
 }
 
+.hero__name {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+}
+
 /* Container */
 .container {
     max-width: 600px;
