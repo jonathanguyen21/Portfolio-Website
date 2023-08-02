@@ -11,7 +11,20 @@ import { faC } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-const headerVariants = {
+const skillVariants = {
+  hidden: {
+    opacity: 0,
+    y: "105vh",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.6,
+      when: "beforeChildren",
+    },
+  },
   hover: {
     scale: 1.1,
   },
@@ -21,7 +34,9 @@ function Skills() {
   return (
     <section className="skills--section container">
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -30,7 +45,9 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -39,7 +56,9 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -48,7 +67,9 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -57,7 +78,9 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -66,7 +89,9 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
@@ -75,12 +100,25 @@ function Skills() {
       </motion.div>
 
       <motion.div
-        variants={headerVariants}
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
         whileHover="hover"
         className="skills__icon"
       >
         <FontAwesomeIcon icon={faJava} className="icon" />
         <p className="icon__name">Java</p>
+      </motion.div>
+
+      <motion.div
+        variants={skillVariants}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+        className="skills__icon"
+      >
+        <FontAwesomeIcon icon={faSwift} className="icon" />
+        <p className="icon__name">Swift</p>
       </motion.div>
     </section>
   );

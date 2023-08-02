@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import Skills from "../components/Skills";
 
-const heroVariants = {
+const headerVariants = {
   hidden: { x: "-100vw" },
   visible: {
     x: 0,
@@ -10,28 +11,33 @@ const heroVariants = {
       stiffness: 60,
     },
   },
-};
-
-const headerVariants = {
   hover: {
     scale: 1.1,
+    transition: {
+      duration: 0.5,
+      repeat: Infinity,
+      repeatType: "mirror",
+    },
   },
 };
 
 function Hero() {
   return (
-    <motion.section
-      variants={heroVariants}
-      initial="hidden"
-      animate="visible"
-      className="hero"
-    >
+    <motion.section animate={{ y: -30 }} className="hero">
       <a href="#">
-        <motion.h1 variants={headerVariants} whileHover="hover">
+        <motion.h1
+          variants={headerVariants}
+          initial="hidden"
+          animate="visible"
+          whileHover="hover"
+        >
           Jonathan Nguyen
         </motion.h1>
       </a>
-      <h2>Software Engineer</h2>
+      <motion.h2 variants={headerVariants} initial="hidden" animate="visible">
+        Software Engineer
+      </motion.h2>
+      <Skills />
     </motion.section>
   );
 }
