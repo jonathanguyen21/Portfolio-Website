@@ -15,20 +15,15 @@ const heroVariants = {
 const headerVariants = {
   hover: {
     scale: 1.1,
-    transition: {
-      duration: 0.2,
-      repeat: Infinity,
-      repeatType: "mirror",
-    },
   },
 };
 
 function Hero() {
   return (
-    <section
-      //variants={heroVariants}
-      //initial="hidden"
-      //animate="visible"
+    <motion.section
+      variants={heroVariants}
+      initial="hidden"
+      animate="visible"
       className="hero"
     >
       <a href="#">
@@ -36,10 +31,8 @@ function Hero() {
           Jonathan Nguyen
         </motion.h1>
       </a>
-      <motion.h2 variants={headerVariants} whileHover="hover">
-        Software Engineer
-      </motion.h2>
-    </section>
+      <h2>Software Engineer</h2>
+    </motion.section>
   );
 }
 
