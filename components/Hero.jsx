@@ -22,6 +22,10 @@ const headerVariants = {
 };
 
 function Hero() {
+  function ScrollContact() {
+    const element = document.getElementById("contact");
+    element.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <motion.section animate={{ y: -30 }} className="hero">
       <a href="#">
