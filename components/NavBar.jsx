@@ -9,6 +9,11 @@ function NavBar() {
     element.scrollIntoView({ behavior: "smooth" });
   }
 
+  function ScrollContact() {
+    const element = document.getElementById("contact");
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <section className="navbar">
       <ul className="navbar__list">
@@ -18,7 +23,9 @@ function NavBar() {
         <a onClick={ScrollProjects} className="navbar__list__item">
           Projects
         </a>
-        <li className="navbar__list__item">Contact</li>
+        <a onClick={ScrollContact} className="navbar__list__item">
+          Contact
+        </a>
         <a
           href="https://docs.google.com/document/d/1tnCklbnH17hHW5gAsIj1t1LGo5UsfNXw/edit?usp=sharing&ouid=106471855305774167176&rtpof=true&sd=true"
           target="_blank"
