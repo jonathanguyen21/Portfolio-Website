@@ -111,6 +111,14 @@ p {
     color: rgb(172, 180, 190);
 }
 
+.about p {
+    padding-left: .75rem;
+}
+
+.about h2 {
+    padding-left: .75rem;
+}
+
 /* Projects */
 
 .projects a {
@@ -125,12 +133,17 @@ p {
     }
 }
 
+.projects h2 {
+    padding-left: .75rem;
+}
+
 .cards__link__arrow {
     margin-left: 0.5rem;
     transition: margin 0.3s;
 }
 
 .card {
+    padding: .5rem .75rem !important;
     transition: background-color .3s;
 }
 
