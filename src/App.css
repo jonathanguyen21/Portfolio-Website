@@ -3,7 +3,7 @@
 
 body {
     /* rgb(15, 27, 56); */
-    background-color: rgb(6, 14, 31);
+    background-color: rgb(6, 13, 30);
     color: rgb(226, 232, 240);
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -54,7 +54,7 @@ a:hover {
 .navbar__list {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: end;
     padding: 0;
 }
 
@@ -63,9 +63,12 @@ a:hover {
     border-bottom: 1px solid #222;
 }
 
-@media screen and (min-width: 1000px) {
-    .navbar__list {
-        justify-content: end;
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 
@@ -217,12 +220,39 @@ p {
     color: red;
 }
 
+@media screen and (max-width: 1000px){
+    .skills--section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
 /* Contact */
 
 .contact {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact__h3 {
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+}
+
+.contact__h4 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: rgb(170, 163, 163);
+}
+
+.contact__email {
+    color: #4ea5f7;
+}
+
+.contact__email:hover {
+    color: #1a4872;
 }
 
 form {
