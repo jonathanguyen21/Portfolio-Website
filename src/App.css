@@ -44,7 +44,7 @@ a:hover {
 /* NavBar */
 
 .navbar {
-    background: rgba(0, 255, 255, 0.05);
+    background: #051929; /*rgba(0, 255, 255, 0.05);*/
     width: auto;
     position: fixed;
     right: 0;
@@ -293,4 +293,13 @@ form button {
     border: 0;
     outline: none;
     cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 400px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 5rem;
 }
