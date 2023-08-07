@@ -1,5 +1,5 @@
 function Badge(props) {
-  return <span className="badge badge--accent">{props.language}</span>;
+  return <span className="badge">{props.language}</span>;
 }
 
 export default Badge;
