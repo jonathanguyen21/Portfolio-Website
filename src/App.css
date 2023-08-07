@@ -196,6 +196,7 @@ p {
 .card__image {
     max-height: 200px;
     width: auto;
+    max-width: 90%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #888888
 }
