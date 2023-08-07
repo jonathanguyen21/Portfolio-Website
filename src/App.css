@@ -101,10 +101,18 @@ a:hover {
     width: fit-content;
 }
 
+.hero__down-arrow {
+    border-radius: 50%;
+    bottom: 2rem;
+    font-size: 2rem;
+    position: absolute;
+}
+
 /* Container */
 .container {
     max-width: 600px;
     margin: 0 auto;
+    scroll-margin-top: 2rem;
 }
 
 /* About */

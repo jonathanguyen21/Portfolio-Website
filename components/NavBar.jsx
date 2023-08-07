@@ -1,17 +1,17 @@
 function NavBar() {
   function ScrollAbout() {
     const element = document.getElementById("about--section");
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
   function ScrollProjects() {
     const element = document.getElementById("projects--section");
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
   function ScrollContact() {
     const element = document.getElementById("contact");
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
   return (

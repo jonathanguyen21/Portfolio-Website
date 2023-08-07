@@ -12,7 +12,7 @@ const cardVariants = {
 
 function Projects() {
   return (
-    <section className="projects" id="projects--section">
+    <section className="projects container" id="projects--section">
       <header className="container">
         <FadeInWhenVisible>
           <h2>Projects</h2>
