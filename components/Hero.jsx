@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Skills from "../components/Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import StarParticles from "../components/StarParticles";
 
 const headerVariants = {
   hidden: { x: "-100vw" },
@@ -45,30 +46,33 @@ function scrollToAbout() {
 
 function Hero() {
   return (
-    <motion.section animate={{ y: -30 }} className="hero">
-      <a href="#" className="hero__name">
-        <motion.h1
-          variants={headerVariants}
+    <>
+      <StarParticles className="particles" />
+      <motion.section animate={{ y: -30 }} className="hero">
+        <a href="#" className="hero__name">
+          <motion.h1
+            variants={headerVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
+            Jonathan Nguyen
+          </motion.h1>
+        </a>
+        <motion.h2 variants={headerVariants} initial="hidden" animate="visible">
+          Software Engineer
+        </motion.h2>
+        <Skills />
+        <motion.a
+          variants={arrowVariants}
           initial="hidden"
           animate="visible"
-          whileHover="hover"
+          onClick={scrollToAbout}
         >
-          Jonathan Nguyen
-        </motion.h1>
-      </a>
-      <motion.h2 variants={headerVariants} initial="hidden" animate="visible">
-        Software Engineer
-      </motion.h2>
-      <Skills />
-      <motion.a
-        variants={arrowVariants}
-        initial="hidden"
-        animate="visible"
-        onClick={scrollToAbout}
-      >
-        <FontAwesomeIcon icon={faAngleDown} className="hero__down-arrow" />
-      </motion.a>
-    </motion.section>
+          <FontAwesomeIcon icon={faAngleDown} className="hero__down-arrow" />
+        </motion.a>
+      </motion.section>
+    </>
   );
 }
 
