@@ -18,8 +18,8 @@ export default function StarParticles() {
       init={particlesInit}
       options={{
         fullScreen: {
-          enable: true,
-          zIndex: 1,
+          enable: false,
+          zIndex: -1,
         },
         particles: {
           number: {

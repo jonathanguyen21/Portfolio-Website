@@ -29,7 +29,7 @@ const arrowVariants = {
     opacity: 0,
   },
   visible: {
-    opacity: 1,
+    opacity: [0.2, 1],
     transition: {
       delay: 1.5,
       duration: 2,
@@ -47,31 +47,37 @@ function scrollToAbout() {
 function Hero() {
   return (
     <>
-      <StarParticles className="particles" />
-      <motion.section animate={{ y: -30 }} className="hero">
-        <a href="#" className="hero__name">
-          <motion.h1
+      <div className="hero__container">
+        <StarParticles />
+        <motion.section animate={{ y: -30 }} className="hero">
+          <a href="#" className="hero__name">
+            <motion.h1
+              variants={headerVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
+              Jonathan Nguyen
+            </motion.h1>
+          </a>
+          <motion.h2
             variants={headerVariants}
             initial="hidden"
             animate="visible"
-            whileHover="hover"
           >
-            Jonathan Nguyen
-          </motion.h1>
-        </a>
-        <motion.h2 variants={headerVariants} initial="hidden" animate="visible">
-          Software Engineer
-        </motion.h2>
-        <Skills />
-        <motion.a
-          variants={arrowVariants}
-          initial="hidden"
-          animate="visible"
-          onClick={scrollToAbout}
-        >
-          <FontAwesomeIcon icon={faAngleDown} className="hero__down-arrow" />
-        </motion.a>
-      </motion.section>
+            Software Engineer
+          </motion.h2>
+          <Skills />
+          <motion.a
+            variants={arrowVariants}
+            initial="hidden"
+            animate="visible"
+            onClick={scrollToAbout}
+          >
+            <FontAwesomeIcon icon={faAngleDown} className="hero__down-arrow" />
+          </motion.a>
+        </motion.section>
+      </div>
     </>
   );
 }
