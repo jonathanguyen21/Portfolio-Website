@@ -185,12 +185,12 @@ p {
 }
 
 .about--section {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 6rem;
 }
 
 @media screen and (min-width: 768px) {
   .about--section {
-    scroll-margin-top: 1rem;
+    scroll-margin-top: 10rem;
   }
 }
 
