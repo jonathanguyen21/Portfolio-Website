@@ -374,6 +374,11 @@ form button {
     margin-bottom: 5rem;
 }
 
+.footer__down-arrow {
+    bottom: 4rem;
+    font-size: 2rem;
+}
+
 /* Grids */
 
 .grid--1x2 {

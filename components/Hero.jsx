@@ -47,7 +47,7 @@ function scrollToAbout() {
 function Hero() {
   return (
     <>
-      <div className="hero__container">
+      <div className="hero__container" id="hero--section">
         <StarParticles />
         <motion.section animate={{ y: -30 }} className="hero">
           <a href="#" className="hero__name">
