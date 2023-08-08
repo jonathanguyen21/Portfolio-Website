@@ -1,5 +1,6 @@
 import "normalize.css";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -18,6 +19,7 @@ function App() {
       <Contact />
       <SocialMedia />
       <Footer />
+      <Analytics />
     </>
   );
 }
