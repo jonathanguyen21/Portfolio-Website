@@ -23,7 +23,7 @@ export default function StarParticles() {
         },
         particles: {
           number: {
-            value: 10,
+            value: 15,
             density: {
               enable: false,
               value_area: 800,
@@ -77,7 +77,7 @@ export default function StarParticles() {
           },
           move: {
             enable: true,
-            speed: 2,
+            speed: 1,
             direction: "none",
             random: false,
             straight: false,
@@ -91,9 +91,9 @@ export default function StarParticles() {
         },
         interactivity: {
           events: {
-            onclick: {
-              enable: false,
-              mode: "bubble",
+            onhover: {
+              enable: true,
+              mode: "repulse",
             },
             resize: true,
           },
@@ -124,7 +124,7 @@ export default function StarParticles() {
           repeat: "no-repeat",
           size: "cover",
         },
-        fps_limit: 30,
+        fps_limit: 60,
       }}
     />
   );
