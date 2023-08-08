@@ -30,7 +30,7 @@ export default function StarParticles() {
             },
           },
           color: {
-            value: "#fff",
+            value: "#48DBC8",
           },
           shape: {
             type: "star",
@@ -71,7 +71,7 @@ export default function StarParticles() {
           line_linked: {
             enable: true,
             distance: 600,
-            color: "#ffffff",
+            color: "#5CDCF2",
             opacity: 0.4,
             width: 2,
           },
@@ -124,6 +124,7 @@ export default function StarParticles() {
           repeat: "no-repeat",
           size: "cover",
         },
+        fps_limit: 30,
       }}
     />
   );
