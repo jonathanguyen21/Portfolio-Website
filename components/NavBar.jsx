@@ -27,7 +27,7 @@ function NavBar() {
           Contact
         </a>
         <a
-          href="https://docs.google.com/document/d/1tnCklbnH17hHW5gAsIj1t1LGo5UsfNXw/edit?usp=sharing&ouid=106471855305774167176&rtpof=true&sd=true"
+          href="https://drive.google.com/file/d/1qngUOGtAuBKxPS-vIkf-3ic_VC_BRwfb/view?usp=sharing"
           target="_blank"
           className="navbar__list__item"
         >
