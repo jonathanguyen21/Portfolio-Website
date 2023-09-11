@@ -64,7 +64,7 @@ function Projects() {
             className="card grid--1x2"
           >
             <section className="grid__element">
-              <h4>Calculator App</h4>
+              <h4>NumberNinja - Calculator App</h4>
               <p className="description">
                 Recreation of the iOS calculator app. Created each button and
                 tested edge cases to help prevent crashes. Coded in Swift using
@@ -100,12 +100,12 @@ function Projects() {
             className="card grid--1x2"
           >
             <section className="grid__element">
-              <h4>Discord Entertainment Bot</h4>
+              <h4>Peanut Bot - Discord Entertainment Bot</h4>
               <p className="description">
                 Users can add this bot for use in their Discord servers. This
                 bot includes a variety of entertainment functions including: a
-                Newegg web scraper, account login detail manager, etc. Coded in
-                Python using BeautifulSoup.
+                language translater, Newegg web scraper, account login detail
+                manager, etc. Coded in Python using BeautifulSoup.
               </p>
               <Badge language="Python" />
               <Badge language="BeautifulSoup" />
@@ -137,7 +137,7 @@ function Projects() {
             className="card grid--1x2"
           >
             <section className="grid__element">
-              <h4>RSA Encryption and Decryption</h4>
+              <h4>SecureMe - RSA Encryption</h4>
               <p className="description">
                 Using an interface for encryption and decryption, users are able
                 to encrypt files and decrypt them if they have access to the
