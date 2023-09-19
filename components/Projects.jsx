@@ -26,6 +26,42 @@ function Projects() {
             className="card grid--1x2"
           >
             <section className="grid__element">
+              <h4>HealthGPT</h4>
+              <p className="description">
+                Chat interface that uses the GPT-3.5 API to allow users to ask
+                for any medical advice they need. The chat uses a trained model
+                that is designed for answering to any patients' needs.
+              </p>
+              <Badge language="React" />
+              <Badge language="GPT-3.5 API" />
+              <div className="project__link__div">
+                <a
+                  href="https://github.com/jonathanguyen21/healthgpt"
+                  target="_blank"
+                >
+                  View Code
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="cards__link__arrow"
+                  />
+                </a>
+              </div>
+            </section>
+            <img
+              src="/images/HealthGPT.png"
+              alt="image of project"
+              className="card__image"
+            />
+          </motion.div>
+        </FadeInWhenVisible>
+
+        <FadeInWhenVisible>
+          <motion.div
+            variants={cardVariants}
+            whileHover="hover"
+            className="card grid--1x2"
+          >
+            <section className="grid__element">
               <h4>Portfolio Website (This Site)</h4>
               <p className="description">
                 Website that shows off my portfolio and experience I have.
