@@ -98,28 +98,6 @@ function Skills() {
         <FontAwesomeIcon icon={faSquareGit} className="icon" />
         <p className="icon__name">Git</p>
       </motion.div>
-
-      <motion.div
-        variants={skillVariants}
-        initial="hidden"
-        animate="visible"
-        whileHover="hover"
-        className="skills__icon"
-      >
-        <FontAwesomeIcon icon={faJava} className="icon" />
-        <p className="icon__name">Java</p>
-      </motion.div>
-
-      <motion.div
-        variants={skillVariants}
-        initial="hidden"
-        animate="visible"
-        whileHover="hover"
-        className="skills__icon"
-      >
-        <FontAwesomeIcon icon={faSwift} className="icon" />
-        <p className="icon__name">Swift</p>
-      </motion.div>
     </section>
   );
 }
