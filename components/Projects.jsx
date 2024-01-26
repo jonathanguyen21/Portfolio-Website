@@ -46,6 +46,15 @@ function Projects() {
                   />
                 </a>
               </div>
+              <div>
+                <a href="https://www.healthhub.wiki/" target="_blank">
+                  View Website
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="cards__link__arrow"
+                  />
+                </a>
+              </div>
             </section>
             <img
               src="/images/HealthGPT.png"
